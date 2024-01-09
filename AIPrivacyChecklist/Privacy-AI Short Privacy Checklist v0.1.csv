@@ -1,0 +1,166 @@
+ID;Topic;Sub Topic;Requirement;Objective;References
+;Governance;Process;Centralised AI Program and governance framework is in place.;"Implement AI Program, or any other centralised body, should be in place to coordinate and document AI use cases within the organisation. AI usage and chatbots can easily be introduced to organisation through implementation of cheap AI Agents in departments/individuals, without oversight, leading to legal and regulatory risks.
+
+Consider aligning AI Management System with ISO/IEC 42001 AI management system.";
+;Governance;Process;Data Governance framework is implemented.;Implement Data Governance framework to have centralised controls and monitoring in place to control data used in AI. Governance framework should provide guidance, policies and standards for data management, and restrictions on usage of personal data.;AI Act Art 10
+;Governance;Policies;AI Policy / AI Acceptable Usage Policy is implemented.;Develop and document a comprehensive AI Usage / Ethics Policy that specifically addresses AI usage. The Policy should set governance framework for all AI usage within the organisation and set overall requirements, such as requirement for risk assessments.;
+;Governance;Process;Continuous compliance review process is defined and implemented;Implement a process for regularly reviewing AI systems for compliance with the prohibitions, including assessments of techniques used and their potential impact on users.;
+;Governance;Policy;AI risks are addressed as part of implemented Risk Management System.;"Overall Risk Management Policy (ERM or IS) covers AI risks and requires AI specific risks to be evaluated and treated. The policy requires that organisation identifies and documents risk level of all AI systems. High risk AI systems are ensured to comply with AI Act requirements.
+
+The risk management system is followed for the entire lifecycle of a high-risk AI system, requiring regular systematic updating.
+
+Risk management system for AI risk should align with best practices framework, such as NIST Artificial Intelligence Risk Management Framework (AI RMF).";AI Act Art 9
+;Governance;Process;DPIAs are performed for High risk AI systems;"Requirements to perform Data Protection Impact Assessment (DPIA) are evaluated and documented. 
+
+DPIAs are performed for systems where those are required.";
+;Governance;Process;DPA notifications are performed as needed.;Requirements to notify Data Protection Authorities of High risk AI systems are identified. Notifications are performed in time for all systems required.;
+;Governance;Process;High risk AI systems are registered as required.;Requirements for registering high risk AI systems are known and complied with.;AI Act Art 51
+;Governance;Process;AI risks are evaluated as part of risk assessment process.;"Risk for:
+Safety
+Regulations
+Legal/contracts
+Accuracy
+Human rights/ethics
+Fairness
+Accountability
+Bias
+
+Are include in the risk assessment.";AI Act Art 9
+;Governance;Process;High risk AI systems are identified;High risk AI systems are identified for privacy risk and treated with extra care. High risk systems are subject to AI Act regulatory requirements.;AI Act Art 9
+;Governance;Process;Identify if intended use falls into categories of ‘Prohibited Artificial Intelligence Practices’;Identify if intended use falls into categories of ‘Prohibited Artificial Intelligence Practices’;AI Act Art 5
+;Governance;Process;Risk assessment includes evaluation if the solution is accessed, used or affects Children.;Risk assessment includes evaluation if the solution is accessed, used or affects Children.;AI Act Art 9
+;Governance;Process;Usage of special categories of personal data is identified.;Usage of special categories of personal data is identified. If such data is processed, special controls are defined as required by GDPR.;AI Act Art 10
+;Governance;Process;Identify impact on fundamental rights.;Identify the extent to which the use of an AI system may cause harm to the health and safety or adverse impact on the fundamental rights.;
+;Governance;Process;Include subject matter experts (SMEs) in AI risk assessments.;Legal, privacy, compliance and cyber security experts are included in AI risk evaluations.;
+;Identification;Documentation;AI risk register is maintained.;AI Risks are registered to risk register.;
+;Identification;Process;AI risks are treated.;The treatment actions are followed.;
+;Identification;Process;AI risks are regular reviewed.;"Regular review of risks is in place, at minimum bi-annually and after any major changes. 
+
+Risks are evaluated before development of new products is commenced and before major changes are implemented, to drive requirements definition to guide the development.";
+;Identification;Process;AI risks are communicated to executive management and board.;Executive management and board are accountable for privacy risks related to AI use and decide on risk treatments.;
+;Identification;Process;Process is executed to identify changes to, and future regulatory and legal requirements.;AI regulatory and legal requirements are continuously monitored. Regular review is performed and documented. Findings are registered and communicated to the management and board.;
+;Governance;Process;Supplier risk assessment includes parties involved in AI service.;Supplier risk assessment process includes suppliers related to AI products, including developers of models, software developers, hosting providers, etc.;
+;Implementation;Requirements;Perform threat modelling against developed AI system to identify risks.;"Perform threat modelling against the developed system to set initial requirements and to update before any major changes. Use MITRE ATLAS model in the Threat Modelling as input.
+
+Threat modelling should include privacy and data leakage cases.";
+;Governance;Process;Asset inventory of all AI systems is maintained;Maintain centralised register of all AI use cases to perform regular risk assessments.;"AIRMF:GOVERN 1.6
+"
+;;;;;
+;Governance;Process;Awareness training related to AI systems and usage is performed.;Provide awareness training to all employees on usage of AI tools and related internal processes and policies in the organisation.;
+;Governance;Policy;Organization’s use of AI is transparent;"Organisation is transparent on usage of AI, and provides information to affected people and groups.
+
+Operation is sufficiently transparent to enable users to interpret the system’s output and use it appropriately.";AI Act Art 13
+;Governance;Policy;People remain accountable for AI actions and responses.;"People must stay accountable for actions taken and responses given by AI systems. Ambiguity of accountability is may lead to systems which can cause harm without anyone being accountable.
+
+A common challenge is accountability over life-time of the AI system. Consider cases where system owners will change over time, and AI system remains.";
+;Governance;Process;Human oversight measures are implemented.;The human oversight measures are implemented to identify and address issues with the usage and output of AI system.;AI Act Art 14
+;;;;;
+;Identification;Process;Risk of users providing  privacy data in prompts is considered.;Privacy risks of users providing personal data as prompt input are consider, including accidental cases.;
+;Identification;Process;The risk of service provider access to prompt and model output data is considered and addressed. ;"The risk of service provider access to prompt and model output data is considered and addressed. By default, many model service providers access input/output of model and store this information and may use the data for their own purposes.
+
+Contractual restrictions should be in place to restrict the access and usage purposes of data received by service provider(s).";
+;Governance;Legal;Data Processing Agreements (DPAs) are in place.;Data Processing Agreements are in place with all 3rd parties with access to personal data.;
+;Governance;Legal;Contractual agreements include restrictions on  personal data usage by the service provider.;"Contractual agreements with service provider(s) include clear restrictions on usage of personal data received by the service provider; e.g. for:
+training/fine-tuning the model, 
+retention periods, 
+controls for protection, 
+distribution and sharing with other parties.";
+;Governance;Legal;Limited indemnification risks are understood and documented.;Risks related to limited indemnification provided by model providers to protect against future legal cases, including potential privacy related cases, are understood and addressed.;
+;;;;;
+;Implementation;Data;Risk related to model training data sources are considered;"Risk related to model training data sources is considered. Risk of foundational models containing personal data is considered. 
+
+Consider cases such as if public Internet data has been used in training of the foundation model, how ‘right to be forgotten’ and other privacy related issues can affect future of the model.
+
+Model providers should be transparent on training data sets, and if there are risks related to personal data being included.
+
+Note that models typically include ‘General browsing data’, ie public Internet, which will include personal data and/or copyrighted material.";
+;Implementation;Data;Personal data should be avoided to fine-tune or train the model.;"Identify if personal data was included in the training, validation, testing or fine+tuning the model.
+
+Organisations may train models on their own private/confidential datasets and this can include employee or customer personal data. 
+
+Training models on personal may cause issues, as data removal is not possible without deletion of the model. Compliance risk with GDPR should be considered.";AI Act Art 10
+;Implementation;Data;Training, validation and testing data must be managed;"Training, validation and testing data sets should be:
+relevant, 
+representative, and
+free of errors
+
+If personal data is used, have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons on which the AI system is intended to be used. ";AI Act Art 10
+;;;;;
+;Implementation;Data;Minimize confidential data usage and access;Reduce the impact in case of an attack by reducing the amount of data that can leak. Anonymise or remove any confidential data which is not needed. Any data used for the training/fine-tuning may be exposed at later stage.;
+;Implementation;Data;Use only allowed data;Ensure data governance is in place..Ensure allowed data, meaning the data used (e.g., training set) is permitted for the intended purpose. ;
+;Implementation;Data;Limitations for usage of personal data are considered;"If personal data is used in the training, validation or testing, limitations for purposes of use are understood (purpose limitation).
+
+E.g. the data may have been collected for other purposes and it is not possible to use it for model training.";
+;Implementation;Data;Risks related to insufficient anonymisation and obfuscation of personal data in training datasets are understood.;Identify if anonymisation or obfuscation has been used to remove the personal data from training datasets. Identify if there are process or technical risks which may lead to accidental or intentional failure of the processes and result in personal data being used for training.;
+;Implementation;Data;Ensure integrity of training data.;Ensure integrity of training data if personal or confidential data is used to training. Training model with inaccurate/wrong data may lead to hard to identify problems in production.;
+;Implementation;Data;Ensure quality of training data.;Ensure quality of training data is sufficient. Inaccurate or low quality training data may lead to hard to identify issues in production.;
+;;;;;
+;Implementation;Data;Ensure confidential data is secured at-rest and in-transit;Ensure confidential data, such as custom models, confidential training data, are secured at-rest and in-transit with best practise cryptography controls.;
+;;;;;
+;Implementation;Documentation;System Design Documentation exists;"Ensure detailed documentation of AI system design, including techniques used exists.
+
+The documentation is at sufficient level to demonstrate that the AI system complies with the requirements set out in AI Act and provide national competent authorities and notified bodies with all the necessary information to assess the compliance of the AI system with those requirements.";AI Act Art 11
+;Implementation;Documentation;System Design Documentation exists;"The documentation of AI systems includes: 
+A general description of the AI system including:
+(a) its intended purpose, the person/s developing the system the date and the version of the system;
+(b) how the AI system interacts or can be used to interact with hardware or software that is not part of the AI system itself, where applicable;
+(c) the versions of relevant software or firmware and any requirement related to version update;
+(d) the description of all forms in which the AI system is placed on the market or put into service;
+(e) the description of hardware on which the AI system is intended to run;
+(f) where the AI system is a component of products, photographs or illustrations showing external features, marking and internal layout of those products;
+(g) instructions of use for the user and, where applicable installation instructions;";AI Act Annex IV
+;Implementation;Documentation;System Design Documentation exists;"The documentation of AI systems includes: 
+A detailed description of the elements of the AI system and of the process for its development, including:
+(a) the methods and steps performed for the development of the AI system, including, where relevant, recourse to pre-trained systems or tools provided by third parties and how these have been used, integrated or modified by the provider;
+(b) the design specifications of the system, namely the general logic of the AI system and of the algorithms; the key design choices including the rationale and assumptions made, also with regard to persons or groups of persons on which the system is intended to be used; the main classification choices; what the system is designed to optimise for and the relevance of the different parameters; the decisions about any possible trade-off made regarding the technical solutions adopted to comply with the requirements;
+(c) the description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; the computational resources used to develop, train, test and validate the AI system;
+(d) where relevant, the data requirements in terms of datasheets describing the training methodologies and techniques and the training data sets used, including information about the provenance of those data sets, their scope and main characteristics; how the data was obtained and selected; labelling procedures (e.g. for supervised learning), data cleaning methodologies (e.g. outliers detection);
+(e) assessment of the human oversight measures needed in accordance with AI Act Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the users, in accordance with AI Act Articles 13(3)(d);
+(f) where applicable, a detailed description of pre-determined changes to the AI system and its performance, together with all the relevant information related to the technical solutions adopted to ensure continuous compliance of the AI system with the relevant requirements set out in AI Act Title III, Chapter 2;
+(g) the validation and testing procedures used, including information about the validation and testing data used and their main characteristics; metrics used to measure accuracy, robustness, cybersecurity and compliance with other relevant requirements set out in AI Act Title III, Chapter 2 as well as potentially discriminatory impacts; test logs and all test reports dated and signed by the responsible persons, including with regard to pre-determined changes as referred to under point (f).";AI Act Annex IV
+;Implementation;Documentation;Ensure dataflow diagrams exist.;Ensure detailed documentation of dataflows exist. Insufficient documentation may lead to errors in design, reviews and lead to insufficient controls in place, resulting in data breaches.;
+;Implementation;Access;Ensure domain model defines models/bots as untrusted.;Ensure that RAG/data source implementation treats LLM/Chatbot as untrusted entity, e.g. similarly than end user’s browser.;
+;;;;;
+;Implementation;Technology;Semantic routing, content filtering or other technical guardrail controls should be used to reduce privacy risk.;Semantic routing, content filtering and other technologies should be in place to reduce the risk of users providing/leakage of personal data in prompts.;
+;Implementation;Technology;Ensure secrets and credentials are stored in secure way.;Ensure credentials secrets for integrations are secured. All secrets should be stored in secure place, such as in HSMs.;
+;Implementation;Technology;Model drift risks are considered.;Model drift is monitored and changes to the security verified. Especially, when using service provider provided models, and if models are updated, the model drift may expose unknown vulnerabilities and unexpected behaviour Model drift, and new vulnerabilities may expose private data if it was used to train the model.;
+;Implementation;Technology;Even logs are implemented.;AI systems is designed and implemented to record  events (‘logs’). Those logging capabilities shall conform to recognised standards or common specifications.;AI Act Art 12
+;Implementation;Technology;The logs are retained;The logs are retained for period defined in requirements and complies with relevant regulations.;
+;Implementation;Technology;The logs are protected from unauthorised modification;The logs are protected from unauthorised modification, e.g. by sending to a SIEM.;AI Act Art 12
+;Implementation;Technology;The logs are backed-up to protect against loss;The logs are backed-up and stored in a way to avoid loss.;AI Act Art 12
+;Implementation;Technology;Access to logs is restricted.;Access to logs is restricted to those with job specific need.;
+;Implementation;Technology;High risk AI system logs contain records from system usage..;"For high-risk AI systems, the logging capabilities  provide, at a minimum:
+(a) recording of the period of each use of the system (start date and time and end date and time of each use);
+(b) the reference database against which input data has been checked by the system;
+(c) the input data for which the search has led to a match;
+(d) the identification of the natural persons involved in the verification of the results.";AI Act Art 12
+;Implementation;Access;Access to model is restricted to users.;"Access to models is restricted based on the use case. Users are authenticated and authorised based on the requirements. 
+
+Requirements are defined based on the criticality of data accessed, actions performed, and per risk assessment.";
+;Implementation;Access;Ensure access to confidential training data is restricted/avoided.;Keep people out of data. Access to data should be implemented programatically and personal access should be avoided.;
+;Implementation;Access;Ensure RAG/Data sources authorise user to access the data, not the bots/intermediate layers.;"Ensure RAG (Retrieval Augmented Generation)/data source usage uses end user’s privileges when querying external data sources to avoid access to unauthorised data. 
+
+Access control failure could lead to disclosure of personal data. Consider cases, such as access to HR or medical data, where person may only access their own data, but datasets/sources include all data.";
+;;;;;
+;Monitoring;Incident response;Incident and compliant channels are implemented and monitored. Reports are reviewed and addressed without undue delay.;Users of the AI systems can easily report concerns, complaints and incidents related to AI usage. The reports are continuously monitored, registered and reviewed without undue delay.;
+;Monitoring;Incident response;Model usage is monitored to detect data breaches/data leakage.;Model usage is monitored automatically and by manually reviewing model outputs to identify inappropriate use, data leakage and attacks.;
+;Response;Incident response;Incident response plans include AI systems and runbooks exist;Incident response plans include AI systems and have specific runbooks defined for AI systems. ;
+;Response;Incident response;Incident response processes address requirements for notification of data subjects.;Incident notifications include planned and trained processes for notifying data subjects within required timelines..;
+;Response;Incident response;Incident response processes address requirements for notification of data protection authorities.;Incident notifications include notification of data protection authorities within required timelines. ;
+;;;;;
+;Recovery;Backups;Data backups exist for personal data processed;Data backups address data loss risk for personal data. Backups are regularly tested.;
+;Recovery;High-availability;Availability requirements have been defined and system designed to comply with those;Availability and redundancy implementation meets the requirements. Availability solution has been tested to meet the requirements.;
+;;;;;
+;Implementation;Testing;Automatic testing/verification is implemented.;Automate verification of model performance, security controls, guardrails and perform verification before updating models.;
+;Implementation;Testing;Ensure control effectiveness is verified before production deployment.;"Effectiveness of defined security, privacy and legal requirements are verified before deployment to production.
+
+High-risk AI systems shall be tested for the purposes of identifying the most appropriate risk management measures. Testing shall ensure that high-risk AI systems perform consistently for their intended purpose.";AI Act Art 9
+;Implementation;Testing;Ensure all end-points are included in the security testing.;"Ensure that all end-points are secured with sufficient authentication and threats mapped, for example, for denial of service attacks. Implement controls to protect end-points against identified risks.
+
+Insufficient protection of end-points may lead to data leakage, through model access, especially in cases where model outputs are augmented with data from internal data sources.";
+;Implementation;Testing;Ensure ML pipelines are secured.;"Ensure that MLOps processes are secured, similarly to any deployment pipelines. The pipelines for model test data, training and deployment should be regularly tested and follow security best practices.
+
+If personal data is used in the training sets, securing the ML pipelines plays important role in the whole security. End-to-end security of data should be ensured, including all intermediate steps, such as temporary processing and data storage locations.";
+;Implementation;Testing;Ensure OWASP Top10 for LLM Applications are included in the security testing;OWASP Top10 for LLM Applications contains list of most common vulnerabilities for LLM applications. These should be included in the security testing to verify that these are protected against.;
+;Implementation;Testing;Ensure security testing is performed.;LLM test tools, such as Garak are used to evaluate security of the LLM model and implementation, including guardrail effectiveness. Testing is performed thorough the implementation. Test results are evaluated and accepted before release to production. Findings deemed high risk are fixed before release to production.;
+;Implementation;Testing;Ensure integrations are included in the security testing.;Ensure that RAG/data source implementations are tested implemented with similar security model if those would be Internet facing.;

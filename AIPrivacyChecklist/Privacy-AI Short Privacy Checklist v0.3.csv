@@ -1,10 +1,10 @@
 ID;Topic;Sub Topic;Requirement;Objective;References
-;Governance;Process;Centralised AI Program and governance framework is in place.;"Implement AI Program, or any other centralised body, should be in place to coordinate and document AI use cases within the organisation. AI usage and chatbots can easily be introduced to organisation through implementation of cheap AI Agents in departments/individuals, without oversight, leading to legal and regulatory risks.
+;Governance;Process;Centralised AI Program and governance framework is in place.;"AI Program, or any other centralised body, should be in place to coordinate and document AI use cases within the organisation. AI usage and chatbots can easily be introduced to organisation through implementation of cheap AI Agents in departments/individuals, without oversight, leading to legal and regulatory risks.
 
 Consider aligning AI Management System with ISO/IEC 42001 AI management system.";ISO42001 4.4
-;Governance;Process;Data Governance framework is implemented.;Implement Data Governance framework to have centralised controls and monitoring in place to control data used in AI. Governance framework should provide guidance, policies and standards for data management, and restrictions on usage of personal data.;AI Act Art 10
+;Governance;Process;Data Governance framework is implemented.;Data Governance framework should be in place to centrally control data used in AI. Governance framework should provide guidance, policies and standards for data management, and restrictions on usage of personal data.;AI Act Art 10
 ;Governance;Policies;AI Policy / AI Acceptable Usage Policy is implemented.;Develop and document a comprehensive AI Usage / Ethics Policy that specifically addresses AI usage. The Policy should set governance framework for all AI usage within the organisation and set overall requirements, such as requirement for risk assessments.;ISO42001 5.2
-;Governance;Process;Continuous compliance review process is defined and implemented;Implement a process for regularly reviewing AI systems for compliance with the prohibitions, including assessments of techniques used and their potential impact on users.;ISO42001 6.1.2
+;Governance;Process;Continuous compliance review process is defined and implemented;Process for regularly reviewing AI systems for compliance with the prohibitions should be in place, including assessments of techniques used and their potential impact on users.;ISO42001 6.1.2
 ;Governance;Policy;AI risks are addressed as part of implemented Risk Management System.;"Overall Risk Management Policy (ERM or IS) covers AI risks and requires AI specific risks to be evaluated and treated. The policy requires that organisation identifies and documents risk level of all AI systems. High risk AI systems are ensured to comply with AI Act requirements.
 
 The risk management system is followed for the entire lifecycle of a high-risk AI system, requiring regular systematic updating.
@@ -14,7 +14,8 @@ ISO42001 6.1.2"
 ;Governance;Process;DPIAs are performed for High risk AI systems;"Requirements to perform Data Protection Impact Assessment (DPIA) are evaluated and documented. 
 
 DPIAs are performed for systems where those are required.";GDPR Art 35
-;Governance;Process;DPA notifications are performed as needed.;Requirements to notify Data Protection Authorities of High risk AI systems are identified. Notifications are performed in time for all systems required.;GDPR Art 35
+;Governance;Process;DPA notifications are performed for high risk personal data processing activities.;DPAs are notified of high risk personal data processing activities (DPIA results in high risk activity). Notifications are performed.;GDPR Art 35
+;Governance;Process;DPA notifications are performed as needed for high risk AI systems.;Requirements to notify Data Protection Authorities of high risk AI systems are identified. Notifications are performed.;AI Act
 ;Governance;Process;High risk AI systems are registered as required.;Requirements for registering high risk AI systems are known and complied with.;AI Act Art 51
 ;Governance;Process;AI risks are evaluated as part of risk assessment process.;"Risk for:
 Safety
@@ -27,7 +28,7 @@ Accountability
 Bias
 
 Are include in the risk assessment.";AI Act Art 9
-;Governance;Process;High risk AI systems are identified;High risk AI systems are identified for privacy risk and treated with extra care. High risk systems are subject to AI Act regulatory requirements.;AI Act Art 9
+;Governance;Process;Process for identifying high risk AI systems is in place;Process for identifying high risk AI systems should be in place. Process should run continuously to identify changing business requirements and implementations. High risk systems are subject to AI Act regulatory requirements.;AI Act Art 9
 ;Governance;Process;Identify if intended use falls into categories of ‘Prohibited Artificial Intelligence Practices’;Identify if intended use falls into categories of ‘Prohibited Artificial Intelligence Practices’;AI Act Art 5
 ;Governance;Process;Risk assessment includes evaluation if the solution is accessed, used or affects Children.;Risk assessment includes evaluation if the solution is accessed, used or affects Children.;AI Act Art 9
 ;Governance;Process;Usage of special categories of personal data is identified.;Usage of special categories of personal data is identified. If such data is processed, special controls are defined as required by GDPR.;AI Act Art 10
@@ -60,12 +61,12 @@ A common challenge is accountability over life-time of the AI system. Consider c
 ;Identification;Process;The risk of service provider access to prompt and model output data is considered and addressed. ;"The risk of service provider access to prompt and model output data is considered and addressed. By default, many model service providers access input/output of model and store this information and may use the data for their own purposes.
 
 Contractual restrictions should be in place to restrict the access and usage purposes of data received by service provider(s).";
-;Governance;Legal;Data Processing Agreements (DPAs) are in place.;Data Processing Agreements are in place with all 3rd parties with access to personal data.;
+;Governance;Legal;Data Processing Agreements (DPAs) are in place.;Data Processing Agreements are in place with all 3rd parties with access to personal data.;GDPR Art 28
 ;Governance;Legal;Contractual agreements include restrictions on  personal data usage by the service provider.;"Contractual agreements with service provider(s) include clear restrictions on usage of personal data received by the service provider; e.g. for:
 training/fine-tuning the model, 
 retention periods, 
 controls for protection, 
-distribution and sharing with other parties.";
+distribution and sharing with other parties.";GDPR Art 28
 ;Governance;Legal;Limited indemnification risks are understood and documented.;Risks related to limited indemnification provided by model providers to protect against future legal cases, including potential privacy related cases, are understood and addressed.;
 ;;;;;
 ;Implementation;Data;Risk related to model training data sources are considered;"Risk related to model training data sources is considered. Risk of foundational models containing personal data is considered. 
@@ -75,7 +76,7 @@ Consider cases such as if public Internet data has been used in training of the 
 Model providers should be transparent on training data sets, and if there are risks related to personal data being included.
 
 Note that models typically include ‘General browsing data’, ie public Internet, which will include personal data and/or copyrighted material.";
-;Implementation;Data;Personal data should be avoided to fine-tune or train the model.;"Identify if personal data was included in the training, validation, testing or fine+tuning the model.
+;Implementation;Data;Personal data should be avoided to fine-tune or train the model.;"Identify if personal data was included in the training, validation, testing or fine-tuning the model.
 
 Organisations may train models on their own private/confidential datasets and this can include employee or customer personal data. 
 
@@ -86,7 +87,6 @@ representative, and
 free of errors
 
 If personal data is used, have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons on which the AI system is intended to be used. ";AI Act Art 10
-;;;;;
 ;Implementation;Data;Minimize confidential data usage and access;Reduce the impact in case of an attack by reducing the amount of data that can leak. Anonymise or remove any confidential data which is not needed. Any data used for the training/fine-tuning may be exposed at later stage.;
 ;Implementation;Data;Use only allowed data;Ensure data governance is in place..Ensure allowed data, meaning the data used (e.g., training set) is permitted for the intended purpose. ;
 ;Implementation;Data;Limitations for usage of personal data are considered;"If personal data is used in the training, validation or testing, limitations for purposes of use are understood (purpose limitation).
@@ -130,7 +130,7 @@ A detailed description of the elements of the AI system and of the process for i
 ;Implementation;Technology;The logs are protected from unauthorised modification;The logs are protected from unauthorised modification, e.g. by sending to a SIEM.;AI Act Art 12
 ;Implementation;Technology;The logs are backed-up to protect against loss;The logs are backed-up and stored in a way to avoid loss.;AI Act Art 12
 ;Implementation;Technology;Access to logs is restricted.;Access to logs is restricted to those with job specific need.;
-;Implementation;Technology;High risk AI system logs contain records from system usage..;"For high-risk AI systems, the logging capabilities  provide, at a minimum:
+;Implementation;Technology;High risk AI system logs contain records from system usage.;"For high-risk AI systems, the logging capabilities  provide, at a minimum:
 (a) recording of the period of each use of the system (start date and time and end date and time of each use);
 (b) the reference database against which input data has been checked by the system;
 (c) the input data for which the search has led to a match;

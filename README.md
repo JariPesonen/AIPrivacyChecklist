@@ -6,6 +6,8 @@ There are commercial solutions available to perform evaluations of AI systems, b
 
 You are welcome to provide additions and suggestions.
 
+CSV export can be found from the folder.
+
 ## License
 This work is provided under CC0 1.0 Universal.
 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt

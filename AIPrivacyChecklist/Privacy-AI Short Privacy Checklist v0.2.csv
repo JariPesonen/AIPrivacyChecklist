@@ -1,19 +1,20 @@
 ID;Topic;Sub Topic;Requirement;Objective;References
 ;Governance;Process;Centralised AI Program and governance framework is in place.;"Implement AI Program, or any other centralised body, should be in place to coordinate and document AI use cases within the organisation. AI usage and chatbots can easily be introduced to organisation through implementation of cheap AI Agents in departments/individuals, without oversight, leading to legal and regulatory risks.
 
-Consider aligning AI Management System with ISO/IEC 42001 AI management system.";
+Consider aligning AI Management System with ISO/IEC 42001 AI management system.";ISO42001 4.4
 ;Governance;Process;Data Governance framework is implemented.;Implement Data Governance framework to have centralised controls and monitoring in place to control data used in AI. Governance framework should provide guidance, policies and standards for data management, and restrictions on usage of personal data.;AI Act Art 10
-;Governance;Policies;AI Policy / AI Acceptable Usage Policy is implemented.;Develop and document a comprehensive AI Usage / Ethics Policy that specifically addresses AI usage. The Policy should set governance framework for all AI usage within the organisation and set overall requirements, such as requirement for risk assessments.;
-;Governance;Process;Continuous compliance review process is defined and implemented;Implement a process for regularly reviewing AI systems for compliance with the prohibitions, including assessments of techniques used and their potential impact on users.;
+;Governance;Policies;AI Policy / AI Acceptable Usage Policy is implemented.;Develop and document a comprehensive AI Usage / Ethics Policy that specifically addresses AI usage. The Policy should set governance framework for all AI usage within the organisation and set overall requirements, such as requirement for risk assessments.;ISO42001 5.2
+;Governance;Process;Continuous compliance review process is defined and implemented;Implement a process for regularly reviewing AI systems for compliance with the prohibitions, including assessments of techniques used and their potential impact on users.;ISO42001 6.1.2
 ;Governance;Policy;AI risks are addressed as part of implemented Risk Management System.;"Overall Risk Management Policy (ERM or IS) covers AI risks and requires AI specific risks to be evaluated and treated. The policy requires that organisation identifies and documents risk level of all AI systems. High risk AI systems are ensured to comply with AI Act requirements.
 
 The risk management system is followed for the entire lifecycle of a high-risk AI system, requiring regular systematic updating.
 
-Risk management system for AI risk should align with best practices framework, such as NIST Artificial Intelligence Risk Management Framework (AI RMF).";AI Act Art 9
+Risk management system for AI risk should align with best practices framework, such as NIST Artificial Intelligence Risk Management Framework (AI RMF).";"AI Act Art 9
+ISO42001 6.1.2"
 ;Governance;Process;DPIAs are performed for High risk AI systems;"Requirements to perform Data Protection Impact Assessment (DPIA) are evaluated and documented. 
 
-DPIAs are performed for systems where those are required.";
-;Governance;Process;DPA notifications are performed as needed.;Requirements to notify Data Protection Authorities of High risk AI systems are identified. Notifications are performed in time for all systems required.;
+DPIAs are performed for systems where those are required.";GDPR Art 35
+;Governance;Process;DPA notifications are performed as needed.;Requirements to notify Data Protection Authorities of High risk AI systems are identified. Notifications are performed in time for all systems required.;GDPR Art 35
 ;Governance;Process;High risk AI systems are registered as required.;Requirements for registering high risk AI systems are known and complied with.;AI Act Art 51
 ;Governance;Process;AI risks are evaluated as part of risk assessment process.;"Risk for:
 Safety
@@ -30,14 +31,14 @@ Are include in the risk assessment.";AI Act Art 9
 ;Governance;Process;Identify if intended use falls into categories of ‘Prohibited Artificial Intelligence Practices’;Identify if intended use falls into categories of ‘Prohibited Artificial Intelligence Practices’;AI Act Art 5
 ;Governance;Process;Risk assessment includes evaluation if the solution is accessed, used or affects Children.;Risk assessment includes evaluation if the solution is accessed, used or affects Children.;AI Act Art 9
 ;Governance;Process;Usage of special categories of personal data is identified.;Usage of special categories of personal data is identified. If such data is processed, special controls are defined as required by GDPR.;AI Act Art 10
-;Governance;Process;Identify impact on fundamental rights.;Identify the extent to which the use of an AI system may cause harm to the health and safety or adverse impact on the fundamental rights.;
+;Governance;Process;Identify impact on fundamental rights.;Identify the extent to which the use of an AI system may cause harm to the health and safety or adverse impact on the fundamental rights.;AI Act Art 7
 ;Governance;Process;Include subject matter experts (SMEs) in AI risk assessments.;Legal, privacy, compliance and cyber security experts are included in AI risk evaluations.;
-;Identification;Documentation;AI risk register is maintained.;AI Risks are registered to risk register.;
-;Identification;Process;AI risks are treated.;The treatment actions are followed.;
+;Identification;Documentation;AI risk register is maintained.;AI Risks are registered to risk register.;ISO42001 6.1.3
+;Identification;Process;AI risks are treated.;The treatment actions are followed.;ISO42001 6.1.3
 ;Identification;Process;AI risks are regular reviewed.;"Regular review of risks is in place, at minimum bi-annually and after any major changes. 
 
 Risks are evaluated before development of new products is commenced and before major changes are implemented, to drive requirements definition to guide the development.";
-;Identification;Process;AI risks are communicated to executive management and board.;Executive management and board are accountable for privacy risks related to AI use and decide on risk treatments.;
+;Identification;Process;AI risks are communicated to executive management and board.;Executive management and board are accountable for privacy risks related to AI use and decide on risk treatments.;ISO42001 6.1.3
 ;Identification;Process;Process is executed to identify changes to, and future regulatory and legal requirements.;AI regulatory and legal requirements are continuously monitored. Regular review is performed and documented. Findings are registered and communicated to the management and board.;
 ;Governance;Process;Supplier risk assessment includes parties involved in AI service.;Supplier risk assessment process includes suppliers related to AI products, including developers of models, software developers, hosting providers, etc.;
 ;Implementation;Requirements;Perform threat modelling against developed AI system to identify risks.;"Perform threat modelling against the developed system to set initial requirements and to update before any major changes. Use MITRE ATLAS model in the Threat Modelling as input.
@@ -46,7 +47,7 @@ Threat modelling should include privacy and data leakage cases.";
 ;Governance;Process;Asset inventory of all AI systems is maintained;Maintain centralised register of all AI use cases to perform regular risk assessments.;"AIRMF:GOVERN 1.6
 "
 ;;;;;
-;Governance;Process;Awareness training related to AI systems and usage is performed.;Provide awareness training to all employees on usage of AI tools and related internal processes and policies in the organisation.;
+;Governance;Process;Awareness training related to AI systems and usage is performed.;Provide awareness training to all employees on usage of AI tools and related internal processes and policies in the organisation.;ISO42001 7.3
 ;Governance;Policy;Organization’s use of AI is transparent;"Organisation is transparent on usage of AI, and provides information to affected people and groups.
 
 Operation is sufficiently transparent to enable users to interpret the system’s output and use it appropriately.";AI Act Art 13
